@@ -10,7 +10,7 @@
 <body>
     <?php
     // Include navbar.php untuk menampilkan menu navigasi
-    include "navbar.php";
+    include "nav.php";
     ?>
 
     <h1>Selamat datang di Halaman Utama</h1>
