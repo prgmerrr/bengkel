@@ -9,7 +9,7 @@
 
 <body>
     <?php
-    require "nav.php";
+    require "php/nav.php";
     ?>
 </body>
 
