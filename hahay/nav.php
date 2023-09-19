@@ -8,9 +8,7 @@
 </head>
 
 <body>
-    <?php
-    require "hahay/nav.php";
-    ?>
+    <h2>asu</h2>
 </body>
 
 </html>
