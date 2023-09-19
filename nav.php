@@ -8,9 +8,7 @@
 </head>
 
 <body>
-    <?php
-    require "nav.php";
-    ?>
+    <h2>asu</h2>
 </body>
 
 </html>
