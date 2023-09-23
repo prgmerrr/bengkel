@@ -1,14 +1,4 @@
-/**
-* Template Name: TheEvent
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   background: #fff;
   color: #2f3138;
@@ -176,12 +166,13 @@ h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  margin-top: 20px;
+  max-height: 100px;
 }
 
 @media (max-width: 992px) {
   #header #logo img {
-    max-height: 30px;
+    max-height: 90px;
   }
 }
 
@@ -250,7 +241,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgba(202, 206, 221, 0.8);
+  color: #4e91fc;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -275,7 +266,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #ffffff;
+  background-color: #ff0000;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -291,7 +282,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #4e91fc;
+  color: #c55959;
 }
 
 .navbar .dropdown ul {
@@ -388,7 +379,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: #4e91fc9b;
   transition: 0.3s;
   z-index: 999;
 }
@@ -448,7 +439,7 @@ h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: #e40000;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -494,7 +485,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(6, 12, 34, 0.8);
+  background: rgba(33, 34, 34, 0.79);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1666,3 +1657,50 @@ label {
 }
 
 
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, -2px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.wa {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 40px;
+  left: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  animation: vibrate 0.5s infinite; /* Menambahkan animasi getar */
+}
+
+/* Menambahkan media query untuk responsif */
+@media (max-width: 768px) {
+  .wa {
+    bottom: 20px;
+    left: 20px;
+    width: 65px;
+    height: 65px;
+    font-size: 24px;
+  }
+}
