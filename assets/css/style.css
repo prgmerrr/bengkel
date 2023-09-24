@@ -1,4 +1,14 @@
+/**
+* Template Name: TheEvent
+* Updated: Sep 18 2023 with Bootstrap v5.3.2
+* Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 body {
   background: #fff;
   color: #2f3138;
@@ -1703,4 +1713,70 @@ label {
     height: 65px;
     font-size: 24px;
   }
+}
+.fact {
+    background: linear-gradient(rgba(189, 36, 36, 0.7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*** Service ***/
+.service .nav .nav-link {
+    background: var(--light);
+    transition: .5s;
+}
+
+.service .nav .nav-link.active {
+    background: var(--primary);
+}
+
+.service .nav .nav-link.active h4 {
+    color: #FFFFFF !important;
+}
+#about2 {
+  background: url("../img/about-bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  padding: 60px 0 40px 0;
+}
+
+@media (min-width: 1024px) {
+  #about2 {
+    background-attachment: fixed;
+  }
+}
+
+#about2:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#about2 h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#about2 h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#about2 p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #fff;
 }
