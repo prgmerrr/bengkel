@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+      <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title=""></a>
+      </div>
+
+      <nav  id="navbar" class="navbar order- order-lg-0">
+        <ul>
+            <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="https://main--tapang.netlify.app//index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#venue">Service</a></li>
+          <li><a class="nav-link scrollto" href="blog.html">blog</a></li>
+          <li><a class="nav-link scrollto" href="galeri.html">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#supporters">Layanan</a></li>
+          <li><a class="nav-link scrollto" href="https://wa.me/6289636110795?text=Selamat%20datang%20di%20INDOMONTIR%0AJenis%20mobil:%0AKeluhan:%0ALokasi:%0ATerimakasih,pesan%20anda%20akan%20segera%C2%A0kami%C2%A0balas.">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a class="buy-tickets scrollto" href="https://wa.me/6289636110795?text=Selamat%20datang%20di%20INDOMONTIR%0AJenis%20mobil:%0AKeluhan:%0ALokasi:%0ATerimakasih,pesan%20anda%20akan%20segera%C2%A0kami%C2%A0balas.">Wa</a>
+
+    </div>
+  </header><!-- End Header -->
+        <div class="background">
+  <div class="container">
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-left">
+          <div class="screen-header-button close"></div>
+          <div class="screen-header-button maximize"></div>
+          <div class="screen-header-button minimize"></div>
+        </div>
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+        </div>
+      </div>
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span>CONTACT</span>
+            <span>US</span>
+          </div>
+         
+                    </div>
+                    <div class="screen-body-item">
+                        <div class="app-form">
+                            <div class="app-form-group">
+                                <input id="nameInput" class="app-form-control" placeholder="MEREK M" value="">
+                            </div>
+                            <div class="app-form-group">
+                                <input id="emailInput" class="app-form-control" placeholder="EMAIL">
+                            </div>
+                            <div class="app-form-group">
+                                <input id="contactNoInput" class="app-form-control" placeholder="CONTACT NO">
+                            </div>
+                            <div class="app-form-group message">
+                                <input id="messageInput" class="app-form-control" placeholder="KELUHAN">
+                            </div>
+                            <div class="app-form-group buttons">
+                                <button class="app-form-button" onclick="sendWhatsAppMessage()">CANCEL</button>
+                                <button class="app-form-button" onclick="sendWhatsAppMessage()">SEND</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="credits">
+                <!-- ... (Bagian credits lainnya) ... -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function sendWhatsAppMessage() {
+            var name = document.getElementById('nameInput').value;
+            var contactNo = document.getElementById('contactNoInput').value;
+            var message = document.getElementById('messageInput').value;
+
+            // Construct the WhatsApp URL
+            var whatsappURL = "https://api.whatsapp.com/send?phone=6281286333341&text=" + encodeURIComponent("Name: " + name + "\nContact No: " + contactNo + "\nMessage: " + message);
+
+            // Redirect the user to WhatsApp
+            window.location.href = whatsappURL;
+        }
+    </script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
