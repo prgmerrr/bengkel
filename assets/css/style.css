@@ -276,7 +276,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #ff0000;
+  background-color: #000000;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -292,7 +292,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #c55959;
+  color: #000000;
 }
 
 .navbar .dropdown ul {
@@ -328,7 +328,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #f82249;
+  color: #000000;
 }
 
 .navbar .dropdown:hover>ul {
@@ -1779,4 +1779,106 @@ label {
   font-size: 14px;
   margin-bottom: 20px;
   color: #fff;
+}
+
+
+#rutin {
+  padding: 60px 0;
+}
+
+#rutin .card {
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+}
+
+#rutin .card:hover {
+  box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
+}
+
+#rutin .card hr {
+  margin: 25px 0;
+}
+
+#rutin .card .card-title {
+  margin: 10px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+#rutin .card .card-price {
+  font-size: 48px;
+  margin: 0;
+}
+
+#rutin .card ul li {
+  margin-bottom: 20px;
+}
+
+#rutin .card .text-muted {
+  opacity: 0.7;
+}
+
+#rutin .card .btn {
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  background-color: #f82249;
+  border: 0;
+  color: #fff;
+}
+
+#rutin .card .btn:hover {
+  background-color: #e0072f;
+}
+
+#rutin #buy-ticket-modal input,
+#rutin #buy-ticket-modal select {
+  border-radius: 0;
+}
+
+#rutin #buy-ticket-modal .btn {
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  background-color: #f82249;
+  border: 0;
+  color: #fff;
+}
+
+#rutin #buy-ticket-modal .btn:hover {
+  background-color: #e0072f;
+}
+.rutin {
+  color: #fff;
+  background: #4e91fc;
+  padding: 7px 22px;
+  margin-left: 120px;
+  margin-top: 1000px;
+  border-radius: 50px;
+  border: 2px solid #4e91fc;
+  transition: all ease-in-out 0.3s;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.rutin:hover {
+  background: none;
+  color: #fff;
+}
+
+.rutin:focus {
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .rutin {
+    margin: 0 15px 0 0;
+  }
 }
